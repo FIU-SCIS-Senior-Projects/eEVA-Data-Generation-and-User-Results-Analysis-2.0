@@ -1,0 +1,127 @@
+
+<div ng-controller="TNSGTRevisitedController">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="col-sm-12">
+                <header id="title-row">
+                    <h1 class="text-center" id="title">The Not So Good Things Revisited</h1>
+                </header>
+            </div>
+        </div>
+
+        <div class="row-fluid">
+            <div class="col-lg-6" id="leftForCounselor"></div>
+
+
+            <div class="col-lg-3, textBox">
+                <div class="row-fluid">
+                    <h4 class="text-center">The Not So Good Things<br> List</h4>
+                </div>
+
+                <div class="row-fluid, responseBox" id="textBox1">
+                    <div ng-click="moveToUserResponses($index)" class="hoverable responseSection" ng-repeat="x in defaultResponses"
+                       id="drag-{{$index}}">
+                        <p class="responseText">{{x.response}}</p>
+                        <span class="glyphicon glyphicon-arrow-right directionalCue rightArrow"></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-3, textBox">
+                <div class="row-fluid">
+                    <h4 class="text-center">What I Don't Like About My Drinking</h4>
+                </div>
+
+                <div class="row-fluid, responseBox " id="textBox2">
+                    <p><i id="formInstructions">Click on responses from the Not So Good Things List to add them here, or enter
+                        responses in the field provided below:</i></p>
+                    <div ng-click="moveToDefault($index)" class="hoverable responseSection" ng-repeat="x in userResponses">
+                        <span class="glyphicon glyphicon-arrow-left directionalCue leftArrow"></span>
+                        <p class="responseText">{{x.response}}</p>
+                    </div>
+                </div>
+
+                <input id="newResponseInputField" ng-model="newResponse">
+                <button class="btn btn-default" ng-click="addItem()">Add</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+
+    .directionalCue{
+        display: none;
+    }
+    .responseText{
+        flex:1;
+    }
+    .rightArrow{
+        float:right;
+        padding-left: 15px;
+    }
+    .leftArrow{
+        float:left;
+        clear: left;
+        padding-right: 15px;
+    }
+
+    .responseSection{
+        display: flex;
+        min-height: 40px;
+    }
+
+
+
+
+    #leftForCounselor{
+        height: 650px;
+    }
+    .hoverable:hover {
+        background-color: yellow;
+    }
+    .hoverable:hover .directionalCue{
+        display: block;
+    }
+    #newResponseInputField {
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    #title{
+        padding-top: 20px;
+    }
+    #formInstructions {
+        color: lightslategray;
+    }
+
+    div.responseBox {
+        display: inline-block;
+        float: left;
+        width: 275px;
+        height: 350px;
+        padding: 10px;
+        border: 1px solid black;
+        overflow: auto;
+    }
+    div.textBox {
+        display: inline;
+        float: left;
+        width: 275px;
+        height: 500px;
+        margin-top: 105px;
+        margin-left: 15px;
+
+    }
+    #title-row {
+        background: black;
+        color: white;
+        position: absolute;
+        left: -15px;;
+        right: -15px;
+        height: 90px;
+
+    }
+</style>

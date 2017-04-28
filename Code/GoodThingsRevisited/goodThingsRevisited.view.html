@@ -1,0 +1,94 @@
+
+<div ng-controller="TGTRevisitedController">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="col-sm-12">
+                <header id="title-row">
+                    <h1 class="text-center" id="title">The Good Things Revisited</h1>
+                </header>
+            </div>
+        </div>
+
+        <div class="row-fluid">
+            <div class="col-lg-6" id="leftForCounselor"></div>
+
+
+            <div class="col-lg-3, textBox">
+                <div class="row-fluid">
+                    <h4 class="text-center">The Good Things List</h4>
+                </div>
+
+                <div class="row-fluid, responseBox" id="textBox1">
+                    <p ng-click="moveToUserResponses($index)" class="hoverable" ng-repeat="x in defaultResponses"
+                       id="drag-{{$index}}">{{x.response}}</p>
+                </div>
+
+            </div>
+
+            <div class="col-lg-3, textBox">
+                <div class="row-fluid">
+                    <h4 class="text-center">What I like About Drinking</h4>
+                </div>
+
+                <div class="row-fluid, responseBox" id="textBox2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <p><i id="formInstructions">Click on responses from the Good Things List to add them here, or enter
+                        responses in the field provided below:</i></p>
+                    <p ng-click="moveToDefault($index)" class="hoverable" ng-repeat="x in userResponses">{{x}}</p>
+                </div>
+
+                <input id="newResponseInputField" ng-model="newResponse">
+                <button class="btn btn-default" ng-click="addItem()">Add</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    #leftForCounselor{
+        height: 650px;
+    }
+    .hoverable:hover {
+        background-color: yellow;
+    }
+
+    #newResponseInputField {
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    #title{
+        padding-top: 20px;
+    }
+    #formInstructions {
+        color: lightslategray;
+    }
+
+    div.responseBox {
+        display: inline-block;
+        float: left;
+        width: 275px;
+        height: 350px;
+        padding: 10px;
+        border: 1px solid black;
+        overflow: auto;
+    }
+    div.textBox {
+        display: inline;
+        float: left;
+        width: 275px;
+        height: 500px;
+        margin-top: 105px;
+        margin-left: 15px;
+
+    }
+    #title-row {
+        background: black;
+        color: white;
+        position: absolute;
+        left: -15px;;
+        right: -15px;
+        height: 90px;
+
+    }
+</style>

@@ -1,0 +1,504 @@
+
+<div id="resourcesSection">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="col-sm-12">
+                <h1 id="title">Resources</h1>
+            </div>
+        </div>
+
+        <div class="row-fluid">
+            <div class="col-lg-6" id="leftForCounselor"></div>
+
+            <div class="col-lg-6 contentStyle">
+                <div class="row-fluid">
+                    <div class="btn-group-vertical btn-group-md center">
+                        <button class="btn btn-success" id="viewResourcesBtn">All Resources</button>
+                        <button class="btn btn-success" id="selfHelpResourceBtn">Self-help/Mutual Help Group</button>
+                        <button class="btn btn-success" id="professionalHelpBtn">Professional Help</button>
+                        <button class="btn btn-success" id="addictionFocusedBooksBtn">Self-Directed Books: Addiction Focused</button>
+                        <button class="btn btn-success" id="feelingsMoodDisordersBtn">Feelings & Mood Disorders</button>
+                        <button class="btn btn-success" id="medicalIssuesBtn">Medical Issues</button>
+                        <button class="btn btn-success" id="medicationsBtn">Medications</button>
+                        <button class="btn btn-success" id="relationshipsBtn">Relationships</button>
+                        <button class="btn btn-success" id="tobaccoBtn">Tobacco</button>
+                        <button class="btn btn-success" id="socialAssertivenessBtn">Social/Assertiveness Skills</button>
+                        <button class="btn btn-success" id="urgesCravingsBtn">Urges and Cravings</button>
+                        <button class="btn btn-success" id="readingLinksBtn">SMART Recovery © Recommended Reading List (edited)</button>
+                    </div>
+                </div>
+
+
+                <!-- The View Resources Modal -->
+                <div id="viewResourcesModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span id="viewResourcesSpan" class="close">&times;</span>
+                            <h4 class="text-center">All Resources</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                This is the last section of the web course. You're done! Click the HOME link above to
+                                see your home page and review or re-do any exercises.
+                            </p>
+                            <p>
+                                We've grouped these resources by issues.
+                            </p>
+                            <h5 class='italic bold'>Self-help/mutual help group</h5>
+                            <self-help-content></self-help-content>
+                            <h5 class="italic bold">
+                                Professional help
+                            </h5>
+                            <professional-help></professional-help>
+                            <h5 class="italic bold">Self-directed books: addiction focusedSelf-directed books: addiction
+                                focused
+                            </h5>
+                            <self-directed-books></self-directed-books>
+                            <h5 class="bold italic">
+                                Feelings & mood disorders
+                            </h5>
+                            <feelings-mood-disorders></feelings-mood-disorders>
+                            <h5 class="bold italic">Medical issues</h5>
+                            <medical-issues></medical-issues>
+                            <medications></medications>
+
+
+                            <h5 class="bold italic">
+                                Relationships
+                            </h5>
+                            <relationships></relationships>
+                            <h5 class="bold italic">Tobacco </h5>
+                            <tobacco></tobacco>
+                            <h5 class="bold italic">
+                                Social/assertiveness skills
+                            </h5>
+                            <social-assertiveness-skills></social-assertiveness-skills>
+                            <h5 class="bold italic">Urges and Cravings </h5>
+                            <urges-cravings></urges-cravings>
+                            <h4 class="bold">SMART Recovery © Recommended Reading List (edited)</h4>
+                            <reading-list></reading-list>
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <button class="btn btn-success pull-right" id="closeResourcesBtn">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- The Self Help Modal -->
+                <div id="selfHelpResourceModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span id="selfHelpResourceSpan" class="close">&times;</span>
+                            <h4 class="text-center">Self-help/Mutual Help Group</h4>
+                        </div>
+                        <div class="modal-body">
+                            <self-help-content></self-help-content>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Professional Help Modal -->
+                <div id="professionalHelpModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span id="professionalHelpSpan" class="close">&times;</span>
+                            <h4 class="text-center">Professional Help</h4>
+                        </div>
+                        <div class="modal-body">
+                            <professional-help></professional-help>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Self-Directed Books: Addiction Focused Modal -->
+                <div id="addictionFocusedBooksModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span id="addictionFocusedBooksSpan" class="close">&times;</span>
+                            <h4 class="text-center">Self-Directed Books: Addiction Focused</h4>
+                        </div>
+                        <div class="modal-body">
+                            <self-directed-books></self-directed-books>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Feelings & Mood disorders Modal -->
+                <div id="feelingsMoodDisordersModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span id="feelingsMoodDisordersSpan" class="close">&times;</span>
+                            <h4 class="text-center">Feelings & Mood Disorders</h4>
+                        </div>
+                        <div class="modal-body">
+                            <feelings-mood-disorders></feelings-mood-disorders>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Medical Issues Modal -->
+                <div id="medicalIssuesModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span id="medicalIssuesSpan" class="close">&times;</span>
+                            <h4 class="text-center">Medical Issues</h4>
+                        </div>
+                        <div class="modal-body">
+                            <medical-issues></medical-issues>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Medications Modal -->
+                <div id="medicationsModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span id="medicationsSpan" class="close">&times;</span>
+                            <h4 class="text-center">Medications</h4>
+                        </div>
+                        <div class="modal-body">
+                            <medications></medications>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Relationships Modal -->
+                <div id="relationshipsModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span id="relationshipsSpan" class="close">&times;</span>
+                            <h4 class="text-center">Relationships</h4>
+                        </div>
+                        <div class="modal-body">
+                            <relationships></relationships>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Tobacco Modal -->
+                <div id="tobaccoModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span id="tobaccoSpan" class="close">&times;</span>
+                            <h4 class="text-center">Tobacco</h4>
+                        </div>
+                        <div class="modal-body">
+                           <tobacco></tobacco>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Social/Assertiveness Skills Modal -->
+                <div id="socialAssertivenessModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span id="socialAssertivenessSpan" class="close">&times;</span>
+                            <h4 class="text-center">Social/Assertiveness Skills</h4>
+                        </div>
+                        <div class="modal-body">
+                            <social-assertiveness-skills></social-assertiveness-skills>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Urges and Cravings Modal -->
+                <div id="urgesCravingsModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span id="urgesCravingsSpan" class="close">&times;</span>
+                            <h4 class="text-center">Urges and Cravings</h4>
+                        </div>
+                        <div class="modal-body">
+                           <urges-cravings></urges-cravings>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Reading Links-->
+                <div id="readingLinksModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span id="readingLinksSpan" class="close">&times;</span>
+                            <h4 class="text-center">SMART Recovery © Recommended Reading List (edited)</h4>
+                        </div>
+                        <div class="modal-body">
+                            <reading-list></reading-list>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+
+    a{
+        text-decoration: underline;
+    }
+    .center{
+        padding-left: 25%;
+
+    }
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left:50%;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.03);
+
+    }
+    .modal-body{
+        font-family: sans-serif;
+    }
+    .modal-body p{
+        font-weight: normal!important;
+    }
+    .modal-header{
+        font-family: sans-serif;
+    }
+    body{
+        font-family: sans-serif;
+        font-weight: 100;
+    }
+
+    #resourcesSection li {
+        list-style-type: square;
+    }
+    .italic{
+        font-style: italic;
+    }
+    .bold{
+        font-weight: bold;
+    }
+    .modal-content {
+        font-weight: 100;
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    .close {
+        color: #ffffff;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        opacity: 1;
+        padding-top: 8px;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .contentStyle{
+        margin-top: 3%;
+        height: 100%;
+    }
+    #leftForCounselor{
+        height: 100%;
+    }
+
+    #title{
+        color: black;
+        padding-top: 30px;
+        text-align: center;
+    }
+</style>
+
+<script type="text/javascript">
+
+    var viewResourcesModal = document.getElementById('viewResourcesModal');
+    var selfHelpResourceModal = document.getElementById('selfHelpResourceModal');
+    var readingLinksModal = document.getElementById('readingLinksModal');
+    var professionalHelpModal = document.getElementById('professionalHelpModal');
+    var addictionFocusedBooksModal = document.getElementById('addictionFocusedBooksModal');
+    var feelingsMoodDisordersModal = document.getElementById('feelingsMoodDisordersModal');
+    var medicalIssuesModal = document.getElementById('medicalIssuesModal');
+    var medicationsModal = document.getElementById('medicationsModal');
+    var relationshipsModal = document.getElementById('relationshipsModal');
+    var tobaccoModal = document.getElementById('tobaccoModal');
+    var socialAssertivenessModal = document.getElementById('socialAssertivenessModal');
+    var urgesCravingsModal = document.getElementById('urgesCravingsModal');
+
+    var viewResourcesBtn = document.getElementById("viewResourcesBtn");
+    var selfHelpResourceBtn = document.getElementById("selfHelpResourceBtn");
+    var readingLinksBtn = document.getElementById("readingLinksBtn");
+    var professionalHelpBtn = document.getElementById('professionalHelpBtn');
+    var addictionFocusedBooksBtn = document.getElementById('addictionFocusedBooksBtn');
+    var feelingsMoodDisordersBtn = document.getElementById('feelingsMoodDisordersBtn');
+    var medicalIssuesBtn = document.getElementById('medicalIssuesBtn');
+    var medicationsBtn = document.getElementById('medicationsBtn');
+    var relationshipsBtn = document.getElementById('relationshipsBtn');
+    var tobaccoBtn = document.getElementById('tobaccoBtn');
+    var socialAssertivenessBtn = document.getElementById('socialAssertivenessBtn');
+    var urgesCravingsBtn = document.getElementById('urgesCravingsBtn');
+
+    var spanSelfHelpResource = document.getElementById("selfHelpResourceSpan");
+    var spanViewResources = document.getElementById("viewResourcesSpan");
+    var spanReadingLinks = document.getElementById("readingLinksSpan");
+    var spanProfessionalHelp = document.getElementById("professionalHelpSpan");
+    var spanAddictionFocusedBooks = document.getElementById("addictionFocusedBooksSpan");
+    var spanFeelingsMoodDisorders = document.getElementById("feelingsMoodDisordersSpan");
+    var spanMedicalIssues = document.getElementById("medicalIssuesSpan");
+    var spanMedications = document.getElementById("medicationsSpan");
+    var spanRelationships = document.getElementById("relationshipsSpan");
+    var spanTobacco = document.getElementById("tobaccoSpan");
+    var spanSocialAssertiveness = document.getElementById("socialAssertivenessSpan");
+    var spanUrgesCravings = document.getElementById("urgesCravingsSpan");
+    var btnCloseResources = document.getElementById("closeResourcesBtn");
+
+
+    viewResourcesBtn.onclick = function() {
+        viewResourcesBtn.style.zIndex = 0;
+        viewResourcesModal.style.display = "block";
+
+    };
+    selfHelpResourceBtn.onclick = function() {
+        selfHelpResourceBtn.style.zIndex = 0;
+        selfHelpResourceModal.style.display = "block";
+    };
+    readingLinksBtn.onclick = function() {
+        readingLinksBtn.style.zIndex = 0;
+        readingLinksModal.style.display = "block";
+    };
+    professionalHelpBtn.onclick = function() {
+        professionalHelpBtn.style.zIndex = 0;
+        professionalHelpModal.style.display = "block";
+    };
+    addictionFocusedBooksBtn.onclick = function() {
+        addictionFocusedBooksBtn.style.zIndex = 0;
+        addictionFocusedBooksModal.style.display = "block";
+    };
+    feelingsMoodDisordersBtn.onclick = function() {
+        feelingsMoodDisordersBtn.style.zIndex = 0;
+        feelingsMoodDisordersModal.style.display = "block";
+    };
+    medicalIssuesBtn.onclick = function() {
+        medicalIssuesBtn.style.zIndex = 0;
+        medicalIssuesModal.style.display = "block";
+    };
+    medicationsBtn.onclick = function() {
+        medicationsBtn.style.zIndex = 0;
+        medicationsModal.style.display = "block";
+    };
+    relationshipsBtn.onclick = function() {
+        relationshipsBtn.style.zIndex = 0;
+        relationshipsModal.style.display = "block";
+    };
+    tobaccoBtn.onclick = function() {
+        tobaccoBtn.style.zIndex = 0;
+        tobaccoModal.style.display = "block";
+    };
+    socialAssertivenessBtn.onclick = function() {
+        socialAssertivenessBtn.style.zIndex = 0;
+        socialAssertivenessModal.style.display = "block";
+    };
+    urgesCravingsBtn.onclick = function() {
+        urgesCravingsBtn.style.zIndex = 0;
+        urgesCravingsModal.style.display = "block";
+    };
+
+    spanSelfHelpResource.onclick = function() {
+        selfHelpResourceModal.style.display = "none";
+    };
+    spanViewResources.onclick = function() {
+        viewResourcesModal.style.display = "none";
+    };
+    spanReadingLinks.onclick = function() {
+        readingLinksModal.style.display = "none";
+    };
+    spanProfessionalHelp.onclick = function() {
+        professionalHelpModal.style.display = "none";
+    };
+    spanAddictionFocusedBooks.onclick = function() {
+        addictionFocusedBooksModal.style.display = "none";
+    };
+    spanFeelingsMoodDisorders.onclick = function() {
+        feelingsMoodDisordersModal.style.display = "none";
+    };
+    spanMedicalIssues.onclick = function() {
+        medicalIssuesModal.style.display = "none";
+    };
+    spanMedications.onclick = function() {
+        medicationsModal.style.display = "none";
+    };
+    spanRelationships.onclick = function() {
+        relationshipsModal.style.display = "none";
+    };
+    spanTobacco.onclick = function() {
+        tobaccoModal.style.display = "none";
+    };
+    spanSocialAssertiveness.onclick = function() {
+        socialAssertivenessModal.style.display = "none";
+    };
+    spanUrgesCravings.onclick = function() {
+        urgesCravingsModal.style.display = "none";
+    };
+
+    btnCloseResources.onclick = function() {
+        viewResourcesModal.style.display = "none";
+    };
+
+
+
+    /*window.onclick = function(event) {
+     if (event.target == modal) {
+     viewResourcesModal.style.display = "none";
+     readingLinksModal.style.display = "none";
+     selfHelpResourceModal.style.display = "none";
+     professionalHelpModal.style.display = "none";
+     addictionFocusedBooksModal.style.display = "none";
+     feelingsMoodDisordersModal.style.display = "none";
+     medicalIssuesModal.style.display = "none";
+     medicationsModal.style.display = "none";
+     relationshipsModal.style.display = "none";
+     tobaccoModal.style.display = "none";
+     socialAssertivenessModal.style.display = "none";
+     urgesCravingsModal.style.display = "none";
+     }
+     }*/
+
+</script>
